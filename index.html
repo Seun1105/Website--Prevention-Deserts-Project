@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevention Deserts Project - Advancing Early Intervention</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <button class="logo-button" onclick="scrollToTop()">
+                    <div class="logo-icon">
+                        <span>PD</span>
+                    </div>
+                    <div class="logo-text">
+                        <div>Prevention Deserts Project</div>
+                    </div>
+                </button>
+
+                <div class="nav-desktop">
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('pillars')" class="nav-link">Focus Areas</button>
+                    <button onclick="scrollToSection('impact')" class="nav-link">Impact</button>
+                    <button onclick="scrollToSection('founder')" class="nav-link">Founder</button>
+                    <!-- <button onclick="scrollToSection('contact')" class="nav-link">Contact</button> -->
+                    <button onclick="scrollToSection('contact')" class="btn btn-primary">Get Involved</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                    <span class="menu-icon" id="menuIcon">☰</span>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <button onclick="scrollToSection('about')" class="mobile-nav-link">About</button>
+                    <button onclick="scrollToSection('pillars')" class="mobile-nav-link">Focus Areas</button>
+                    <button onclick="scrollToSection('impact')" class="mobile-nav-link">Impact</button>
+                    <button onclick="scrollToSection('founder')" class="mobile-nav-link">Founder</button>
+                    <!-- <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contact</button> -->
+                    <button onclick="scrollToSection('contact')" class="btn btn-primary btn-full">Get Involved</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Mapping Prevention Deserts and Advancing Early Intervention to Curb Chronic Disease in America.</h1>
+                <p class="hero-subtitle">A data-informed public health effort focused on saving lives, reducing costs, and promoting health equity.</p>
+                <div class="hero-actions">
+                    <button onclick="scrollToSection('about')" class="btn btn-primary btn-large">Learn More</button>
+                    <button onclick="scrollToSection('contact')" class="btn btn-secondary btn-large">Join our efforts</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-white">
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>About the Initiative</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="content-spacing">
+                    <p class="text-content">
+                        This initiative aims to identify 'prevention deserts', communities at highest risk for chronic diseases such as heart disease, diabetes, and obesity, and implement targeted early-intervention programs that expand access to preventive care.
+                    </p>
+                    <p class="text-content">
+                        Chronic diseases account for over 90% of U.S. healthcare spending and cause millions of preventable deaths each year. Our goal is to reverse this trend through community-based prevention and policy coordination.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number stat-teal">90%</div>
+                        <p class="stat-text">of U.S. healthcare spending on chronic disease</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number stat-blue">Millions</div>
+                        <p class="stat-text">of preventable deaths each year</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number stat-green">Community</div>
+                        <p class="stat-text">-based prevention approach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Pillars Section -->
+    <section id="pillars" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Pillars & Focus Areas</h2>
+                <div class="divider"></div>
+                <p class="section-description">Our comprehensive approach to preventing chronic disease and advancing health equity</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon icon-teal">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Data-Informed Community Mapping</h3>
+                    <p>Using public health and demographic data to identify high-risk regions.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon icon-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1z"></path>
+                            <path d="M19 12h2a1 1 0 0 1 0 2h-2a1 1 0 0 1 0-2z"></path>
+                            <path d="M12 19a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"></path>
+                            <path d="M5 12H3a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2z"></path>
+                            <circle cx="12" cy="12" r="5"></circle>
+                        </svg>
+                    </div>
+                    <h3>Early Intervention Programs</h3>
+                    <p>Partnering with local health departments to provide screenings, education, and outreach.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon icon-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Health Equity and Access</h3>
+                    <p>Ensuring that underserved communities receive preventive resources.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon icon-indigo">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Collaboration and Advocacy</h3>
+                    <p>Working alongside federal, state, and nonprofit stakeholders to strengthen national prevention systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section section-white">
+        <div class="container">
+            <div class="section-inner-large">
+                <div class="section-header">
+                    <h2>Impact & Urgency</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-content">
+                        <div class="alert-box">
+                            <div class="alert-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                </svg>
+                            </div>
+                            <p>Heart disease, diabetes, and other chronic illnesses continue to claim preventable lives each day. Immediate action is needed to identify high-risk populations and deliver preventive solutions before these conditions become fatal.</p>
+                        </div>
+
+                        <div class="impact-stats">
+                            <div class="impact-stat stat-red">
+                                <div class="impact-stat-number">843,000+</div>
+                                <p>deaths per year from heart disease and stroke</p>
+                            </div>
+
+                            <div class="impact-stat stat-blue-alt">
+                                <div class="impact-stat-number">$4.9T</div>
+                                <p>spent annually on chronic illness care</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="impact-image">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1620790647593-b3a6916c7d60?q=80&w=1074" alt="Medical data analytics" />
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="section section-blue-gradient">
+        <div class="container">
+            <div class="section-inner-medium">
+                <div class="section-header">
+                    <h2>About the Founder</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-grid">
+                        <div class="founder-photo">
+                            <div class="photo-container">
+                                <div class="photo-wrapper">
+                                    <img src="https://i.im.ge/2026/01/06/Goyf2x.Image-20251226-172854-452.jpeg" alt="Dorcas Olaosebikan" />
+                                </div>
+                                <div class="photo-decoration"></div>
+                            </div>
+                        </div>
+
+                        <div class="founder-bio">
+                            <h3>Dorcas Olaosebikan</h3>
+                            <p class="founder-title">MHA, BSc Public Health</p>
+
+                            <div class="bio-content">
+                                <p>Dorcas is a healthcare administrator and public health advocate specializing in chronic disease prevention and health equity. Her work focuses on integrating community-level insights with national policy priorities to reduce preventable deaths and advance equitable healthcare outcomes.</p>
+                                <p>With a Master's in Healthcare Administration and a Bachelor's in Public Health, she brings a unique blend of operational expertise and population health strategy to this critical mission.</p>
+                            </div>
+
+                            <div class="founder-actions">
+                                <button class="btn btn-outline-teal">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                    Download Project Overview
+                                </button>
+                                <button onclick="scrollToSection('contact')" class="btn btn-primary">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    Contact Dorcas
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section id="partnerships" class="section section-white">
+        <div class="container">
+            <div class="section-inner-medium">
+                <div class="section-header">
+                    <h2>Partnerships & Collaboration</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <p class="partnerships-intro">We collaborate with local health departments, hospitals, nonprofit organizations, and policymakers to design scalable and sustainable prevention programs.</p>
+
+                <div class="partnerships-grid">
+                    <div class="partnership-card">
+                        <div class="partnership-box box-teal">
+                            <div class="photo-container">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1543069752-7148d755b347?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dorcas Olaosebikan" />
+                                </div>
+                                <div class="photo-decoration"></div>
+                            </div>
+                        </div>
+                        <p class="partnership-label">Community Partners</p>
+                    </div>
+
+                    <div class="partnership-card">
+                        <div class="partnership-box box-blue">
+                            <div class="photo-container">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1631507623121-eaaba8d4e7dc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dorcas Olaosebikan" />
+                                </div>
+                                <div class="photo-decoration"></div>
+                            </div>
+                        </div>
+                        <p class="partnership-label">Clinical Partners</p>
+                    </div>
+
+                    <div class="partnership-card">
+                        <div class="partnership-box box-green">
+                            <div class="photo-container">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1683187481079-fadf0e704ba1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dorcas Olaosebikan" />
+                                </div>
+                                <div class="photo-decoration"></div>
+                            </div>
+                        </div>
+                        <p class="partnership-label">Advocacy Partners</p>
+                    </div>
+
+                    <div class="partnership-card">
+                        <div class="partnership-box box-indigo">
+                            <div class="photo-container">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1607778417094-1fef13315e6e?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dorcas Olaosebikan" />
+                                </div>
+                                <div class="photo-decoration"></div>
+                            </div>
+                        </div>
+                        <p class="partnership-label">Government Partners</p>
+                    </div>
+                </div>
+
+                <div class="partnerships-cta">
+                    <p class="cta-text">Interested in becoming a partner?</p>
+                    <button onclick="scrollToSection('contact')" class="link-button">
+                        Let's connect and explore collaboration opportunities
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-teal-gradient">
+        <div class="container">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>Let's Connect</h2>
+                    <div class="divider"></div>
+                    <p class="section-description">Interested in learning more, supporting our work, or collaborating on community health initiatives? Let's connect.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-sidebar">
+                        <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <div class="contact-icon icon-teal-bg">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <h3>Email</h3>
+                            </div>
+                            <a href="mailto:info@preventiondeserts.org" class="contact-link">info@preventiondeserts.org</a>
+                        </div>
+
+                        <!-- <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <div class="contact-icon icon-blue-bg">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <h3>LinkedIn</h3>
+                            </div>
+                            <a href="https://linkedin.com" target="_blank" class="contact-link contact-link-blue">Connect with us</a>
+                        </div> -->
+                        <div class="collaboration-card">
+                            <p class="collaboration-intro">We welcome collaboration from:</p>
+                            <ul class="collaboration-list">
+                                <li>• Healthcare organizations</li>
+                                <li>• Public health agencies</li>
+                                <li>• Research institutions</li>
+                                <li>• Community advocates</li>
+                                <li>• Policy makers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Your name" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="organization">Organization</label>
+                                <input type="text" id="organization" name="organization" placeholder="Your organization (optional)" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your interest or how you'd like to collaborate..." rows="5"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-full">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo-icon">
+                            <span>PD</span>
+                        </div>
+                        <span>Prevention Deserts Project</span>
+                    </div>
+                    <p class="footer-tagline">Advancing early intervention to curb chronic disease in America</p>
+                    <p class="footer-copyright">© 2025 Prevention Deserts Project. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
